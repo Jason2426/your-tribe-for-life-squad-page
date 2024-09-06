@@ -1,5 +1,6 @@
 <script>
 	import Details from '../../component detailpage/details.svelte';
+	import '$lib/styles/test.css'
 
     /** @type {import('../$types').PageData} */
     export let data;
@@ -36,7 +37,6 @@
 			<article>
 				<h1>Details img</h1>
 				<img src="./static/images/A19F6889-518F-406C-9590-2F7FD69AD278_4_5005_c.jpeg" alt="">
-
 			</article>
 			<article>
 				<div>
@@ -51,7 +51,7 @@
 <button on:click={toggle} > open modal
 
 </button>
-
+<Details></Details>
 <style>
 	*,
 *::before,
@@ -81,8 +81,7 @@ html {
 	article{
 		outline:1px solid green;
 		flex: 1;
-		
-		
+
 	}
 	article div{
 		/* width: ; */
