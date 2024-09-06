@@ -54,6 +54,7 @@
 		z-index: -1;
 		position: absolute;
 		background-color: rgb(69, 67, 67);
+		width: 100%;
 	}
 
 	nav {
@@ -69,7 +70,6 @@
 	section {
 		display: flex;
 		flex-flow: column wrap;
-		max-width: 400px;
 		justify-content: center;
 		align-items: center;
 	}
