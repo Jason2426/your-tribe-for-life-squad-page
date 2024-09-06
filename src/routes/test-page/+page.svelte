@@ -1,14 +1,14 @@
 <script>
 	import Details from '../../component detailpage/details.svelte';
 
-    /** @type {import('./$types').PageData} */
+    /** @type {import('../$types').PageData} */
     export let data;
-    let showModal = false;
+    let showModal = true;
     const toggle = () =>{
 		showModal = !showModal;
 	}
     // Check if the data has been received and is an array
-    // console.log("Received data in +page.svelte:", data);
+    console.log(data);
 </script>
 
 <!-- Only render if we have people in the data -->
@@ -24,7 +24,7 @@
 
 {#if 10 > 2}
 	<p>10 bigger</p>
-	<Details peeps="im the peep" showModal={showModal} on:click={toggle}>
+	<Details showModal={showModal} on:click={toggle}>
 		<section>
 			<article>
 				<ul>
@@ -35,7 +35,7 @@
 			</article>
 			<article>
 				<h1>Details img</h1>
-				<img src="" alt="">
+				<img src="./static/images/A19F6889-518F-406C-9590-2F7FD69AD278_4_5005_c.jpeg" alt="">
 
 			</article>
 			<article>
@@ -52,7 +52,48 @@
 
 </button>
 
+<style>
+	*,
+*::before,
+*::after,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  appearance: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  text-wrap: balance;
+  /* container-type:inline-size; */
 
+}
+
+	section{
+		position: relative;
+		display: flex;
+		/* background-color: #f0f0f0; */
+		/* outline: solid; */
+		height: 100%;
+		padding: 2%;
+		
+	}
+	article{
+		outline:1px solid green;
+		flex: 1;
+		
+		
+	}
+	article div{
+		/* width: ; */
+		height: 100%;
+		/* background-color: bisque; */
+	}
+
+	iframe{
+		width: 100%;
+	}
+</style>
 
 
 
