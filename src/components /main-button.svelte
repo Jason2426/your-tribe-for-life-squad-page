@@ -32,7 +32,7 @@ class={`${buttonStyles()}`}
 
     .first {
         background-color:#5F0CBC;
-        border: 2px solid #B285E5;
+        border: 2.5px solid #B285E5;
         color: white;
     }
 
@@ -43,5 +43,12 @@ class={`${buttonStyles()}`}
     .secondary {
         /* other variants if needed */
         background-color: royalblue; /*test*/ 
+    }
+
+    @media (min-width: 62.5em){
+        a {
+            font-size: 1.25em;
+            padding: 1em 1.5em 1em 1.5em;
+        }
     }
 </style>
