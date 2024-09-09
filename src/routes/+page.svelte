@@ -23,3 +23,19 @@
 
 {/if}
 
+<style>
+    *,
+*::before,
+*::after,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  appearance: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+</style>
