@@ -61,7 +61,8 @@ html {
 	.modal{
 		/* background-color: white; */
 		outline: 1px solid ;
-		width: 50vw;
+		border-radius: 10px;
+		width: 70vw;
 		height: 60vh;
 		/* color: red; */
 	}
