@@ -1,5 +1,6 @@
 <script>
-	import Topbar from '../components/topbar.svelte';
+	// import Topbar from '../lib/Topbar.svelte';
+    import {Details, Carousel,Topbar} from '$lib';
 
     /** @type {import('./$types').PageData} */
     export let data;

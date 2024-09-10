@@ -23,7 +23,7 @@
     --greyLight-2: #c8d0e7;
     --greyDark: #9baacf;
     --white: #ffffff;
-  }
+    }
   
     .topbar {
       display: flex;
