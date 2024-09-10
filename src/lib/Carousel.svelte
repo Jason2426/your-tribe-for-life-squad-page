@@ -1,13 +1,18 @@
 <script>
 	
 	export let people;
-	export let peep
+	export let peep;
+	
 </script>
 
 <h1>Im a carousel</h1>
 <section>
 	<div class="prev button">
-		<button>prev btn</button>
+		<button on:click={()=>{
+			console.log(peep);
+			return peep -= 1;
+
+		}}>prev btn</button>
 	</div>
 	<ul>
 		{#each people as person}
@@ -39,7 +44,10 @@
 		{/each}		
 	</ul>
 	<div class="next button">
-		<button>next btn</button>
+		<button on:click={()=>{
+			console.log(peep);
+			 return peep += 1;
+		}}>next btn</button>
 	</div>
 </section>
 
