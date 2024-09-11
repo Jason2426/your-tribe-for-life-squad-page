@@ -5,9 +5,9 @@
     // Check if the data has been received and is an array
     console.log("Received data in +page.svelte:", data);
 
-    import SquadLogo from '../components /squad-logo.svelte';
-    import DropdownMenu from '../components /dropdown-menu.svelte';
-    import CardComponent from "../components/card-component.svelte";
+    import SquadLogo from '$lib/squad-logo.svelte';
+    import DropdownMenu from '$lib/dropdown-menu.svelte';
+    import CardComponent from "$lib/card-component.svelte";
 
     // import Topbar from '../lib/Topbar.svelte';
     import {Details, Carousel,Topbar} from '$lib';
@@ -87,17 +87,3 @@
     </main>
 </body>
 
-
-<Topbar /> 
-
-<!-- Only render if we have people in the data -->
-{#if data.people}
-    {#each data.people as person}
-        <h1>{person.name}</h1>
-        <p>{person.bio}</p>
-    {/each}
-{:else}
-    <!-- This will show if no people are available -->
-    <p>No data available</p>
-
-{/if}
