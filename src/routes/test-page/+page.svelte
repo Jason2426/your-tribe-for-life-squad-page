@@ -1,9 +1,17 @@
 <script>
 	import {Cards} from '$lib';
 
-    /** @type {import('./$types').PageData} */
     export let data;
 	export let people = data.people;
+
+	let id, squadId, bio
+
+	function changePersonData (event) {
+		id = event.target.bl
+		squadId = event.target.sq
+		bio = event.target.bio
+		showModal = true
+	}
 	export let showModal = false;
     export const toggle = () =>{showModal = !showModal};
 	export let setValue 
@@ -24,7 +32,7 @@
 			{setValue}
 		></Cards>
 		{/if}
-			
+
 		{/each}
 
 	{:else}
