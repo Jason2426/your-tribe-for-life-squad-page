@@ -1,83 +1,37 @@
 <script>
-	import {Details, Carousel} from '$lib';
+	import {Cards} from '$lib';
 
     /** @type {import('./$types').PageData} */
     export let data;
-
-    let showModal = true;
-    const toggle = () =>{
-		showModal = !showModal;
-	}
-
-	console.log(data.people[0]);
-
-	let people = data.people;
-	const person_id = 72;
-	export let peep = person_id;
-	
-	
+	export let people = data.people;
+	export let showModal = false;
+    export const toggle = () =>{showModal = !showModal};
+	export let setValue 
     // Check if the data has been received and is an array
     // console.log("Received data in +page.svelte:", data);
 </script>
 
-<!-- Only render if we have people in the data -->
-
-
-{#if 10 > 2}
-	<p>10 bigger</p>
+{#if people}
+<h1>squad page</h1>
 	{#each people as person }
-		{#if person.id === peep && person.name.length < 0 }
-		<Details>
-			<section>
-				<p>mystery person</p>
-			</section>
-			
-		</Details>
-			
-	
-			
-		{:else if person.id === peep && person.name.length > 0}
-		<Details showModal={showModal} on:click={toggle}>
 
-			<section>
-				<article class="p_info">
-					<ul>
-						<li class="name">{person.name} {person.surname}</li>
-						<li>squad_id :{person.squad_id}</li>
-						<li>fun fact {person.bio}</li>
-					</ul>
-				</article>
-				<article class="p_img">
-					<!-- <h1>Details img</h1> -->
-					<img src="{person.avatar}" alt="{person.name}-{person.squad_id}">
+	{#if person.id == 40}
+	<Cards
+		{showModal}
+		{people}
+		{person}
+		{toggle}
+		{setValue}
+	></Cards>
+	{/if}
 
-				</article>
-				<article class="p_frame">
-					<div>
-						<!-- <p>iframe github or other</p> -->
-						<a href={person.website}>
-							<!-- website -->
-							<iframe src={person.website}  frameborder="0"></iframe>
-						</a>
-
-					</div>
-				</article>
-			</section>
-			<section>
-				<div class="carousel">
-					<Carousel people={data.people} {peep}  />
-				</div>
-			</section>
-		</Details>
-
-		{/if}	
 	{/each}
-	
+
+	{:else}
+
+	<h1>no data</h1>
+
 {/if}
-
-<button on:click={toggle} > open modal
-
-</button>
 
 <style>
 *,

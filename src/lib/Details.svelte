@@ -20,16 +20,16 @@
 	
 {/if} -->
 {#if showModal}
-<div class="backdrop" on:click|self>
+	<div class="backdrop" on:click|self>
 
-    <div class="modal">
-		<!-- <p>modal++</p> -->
-		<slot></slot>
+		<div class="modal">
+			<!-- <p>modal++</p> -->
+			<slot></slot>
+		</div>
+
+
+
 	</div>
-
-
-
-</div>
 {/if}
 
 <style>
