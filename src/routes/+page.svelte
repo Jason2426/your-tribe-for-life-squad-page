@@ -8,12 +8,31 @@
     import SquadLogo from '../components /squad-logo.svelte';
     import DropdownMenu from '../components /dropdown-menu.svelte';
     import CardComponent from "../components/card-component.svelte";
+
+    // import Topbar from '../lib/Topbar.svelte';
+    import {Details, Carousel,Topbar} from '$lib';
+
   
     const imgSrcs = ['/images/Daan.png'];
     
 </script>
 
 <style>
+
+        *,
+        *::before,
+        *::after,
+        html {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        appearance: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        scrollbar-gutter: stable;
+        scrollbar-width: thin;
+        }
     body {
 		height: 100vh;
 		width: 100vw;
@@ -69,4 +88,16 @@
 </body>
 
 
+<Topbar /> 
 
+<!-- Only render if we have people in the data -->
+{#if data.people}
+    {#each data.people as person}
+        <h1>{person.name}</h1>
+        <p>{person.bio}</p>
+    {/each}
+{:else}
+    <!-- This will show if no people are available -->
+    <p>No data available</p>
+
+{/if}
