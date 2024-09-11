@@ -15,17 +15,17 @@
 <h1>squad page</h1>
 	{#each people as person }
 
-	{#if person.id == 40}
-	<Cards
-		{showModal}
-		{people}
-		{person}
-		{toggle}
-		{setValue}
-	></Cards>
-	{/if}
-
-	{/each}
+		{#if 1 > 0}
+		<Cards
+			{showModal}
+			{people}
+			{person}
+			{toggle}
+			{setValue}
+		></Cards>
+		{/if}
+			
+		{/each}
 
 	{:else}
 
