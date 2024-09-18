@@ -1,5 +1,5 @@
 # Squad page
-<img width="1800" alt="Scherm­afbeelding 2024-09-18 om 14 40 23" src="https://github.com/user-attachments/assets/ebe24272-fc07-404e-a5c5-d2ab99a9b826">
+<img width="1800" alt="Scherm­afbeelding 2024-09-18 om 15 00 52" src="https://github.com/user-attachments/assets/c53870a8-0b61-4104-b0ff-2bdfca26cfdc">
 
 ## Inhoudsopgave
   * [✏️ Beschrijving](#beschrijving)
