@@ -40,6 +40,9 @@
     left: 0;
     border-radius: 5px;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 1);
+
+    /* outline: solid red; */
+
 }
 
 .all-cards:hover{
@@ -90,23 +93,39 @@
 
 .about-us {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 50vw;
-    flex: 0 1 50vw;
+   
+    flex: 0 1 55vw;
+    /* outline: solid green; */
+   
 }
 
 .about-us h3{
     transition: 1s;
 }
 
+.about-us p{
+    transition: 1s;
+    /* padding: 3%; */
+    /* outline: solid green; */
+
+}
+
 .about-us h3::after{
-    content: 'meet the team';
+    content: 'Meet the team';
     font-size: clamp(1rem, 1.912vw + 0.388rem, 3rem);
    
 
 }
 
+section.meet-our-team:has(.all-cards:hover)  .about-us p{
+
+    display: none;
+    
+}
 section.meet-our-team:has(.card1:hover)  .about-us h3::after{
     content: 'Chris';
 }
