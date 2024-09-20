@@ -184,10 +184,8 @@
 		<section class="card-section-layout">
 			{#each imgSrcs as imgSrc}
 				<CardComponent 
-				{imgSrc} 
-				on:click={() => open(imgSrc)} 
-				
-				></CardComponent>
+				{imgSrc}>
+				</CardComponent>
 			{/each}
 	</section>
 	
