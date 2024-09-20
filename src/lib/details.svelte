@@ -1,6 +1,5 @@
 <script>
 	import '../styles/deail.css';
-	import { onMount } from 'svelte';
 	export	let sPerson
 	export	let close
 
