@@ -3,19 +3,7 @@
 	export	let sPerson
 	export	let close
 
-	function isloaded(url){
-		fetch(url)
-  .then(response => {
-    if (response.ok) {
-      console.log('Link is valid and accessible.');
-    } else {
-      console.log('Link exists, but not accessible. Status:', response.status);
-    }
-  })
-  .catch(error => {
-    console.log('Failed to fetch the link:', error);
-  });
-	}
+	
 	
 </script>
 
