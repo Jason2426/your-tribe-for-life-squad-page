@@ -12,7 +12,7 @@
 
 	// Components
 	import CardComponent from "$lib/card-component.svelte";
-	import Details from '$lib/Details.svelte';
+	import Details from '$lib/details.svelte';
 
 	// Variables
 	/** @type {import('./$types').PageData} */
