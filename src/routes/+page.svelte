@@ -62,13 +62,14 @@
 		{id:false,src:'/images/D3BD2AE8-4171-4855-B447-489ECCF39BD8_4_5005_c.jpeg'},
 		{id:false,src:'/images/D5FC597F-C385-409A-9D19-D74BDABA1998_4_5005_c.jpeg'},
 		{id:false,src:'/images/D5828D0D-7C52-498E-91E8-E68AA80EBEBE_4_5005_c.jpeg'},
-		{id:false,src:'./images/annelinde.jpg',name:'annelinde'},//annelinde
+		{id:26,src:'./images/annelinde.jpg',name:'annelinde'},//annelinde
 		{id:85,src:'/images/D200900D-9E51-4D26-9125-C7993ED4A18D_4_5005_c.jpeg'},
 		{id:14,src:'/images/DEE80F51-BF2E-424B-B792-B24F8A8527DE_1_102_o.jpeg'},
 		{id:9,src:'/images/DF5516A1-5C9E-4390-B3E0-68F28CCB31C2_4_5005_c.jpeg'},
 		{id:64,src:'./images/ellenoor.jpeg'},// ellenoor
 		{id:false,src:'/images/F2FBA29C-B4A5-43A7-9618-69C70C6CC3AD_4_5005_c.jpeg'},
 		{id:50,src:'/images/F7D4543D-945D-49F4-AE3B-FD77B8439ABD_4_5005_c.jpeg'},
+		{id:29,src:false,name:'jesse'},
 	];
 
 		
@@ -190,22 +191,13 @@
 				></CardComponent>
 			{/each}
 	</section>
-	
-	<!--Workspace Annelinde-->
-	<section class="Meet our team">
-		<div class="about-us">
-			<!--H3-->
-		</div>
-		<div class="our-team-cards">
-			<!--Our team card components 6x-->
-		</div>
-	</section>
 
 	<!--Workspace Ellenoor-->
 	<section class="meet-our-team">
 		<div class="about-us">
 			<!--H3-->
 			<h3></h3>
+			<p>Our team of frontend developers is a group of enthusiastic individuals focused on creating websites that are both user-friendly and visually appealing. We work well together to ensure everything runs smoothly, looks great, and is easy for users to understand.</p>
 		</div>
 		<section class="our-team-cards">
 			<div class="card1 all-cards">
@@ -265,4 +257,3 @@
 	</section>
  </main>
 
-		

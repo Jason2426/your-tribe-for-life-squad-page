@@ -53,6 +53,95 @@ body {
 	color: #FFFFFF;
 }
 
+/* Annelinde */
+
+@media(min-width : 420px){
+	.meet-our-team {
+	background-color: #111212;
+	display: flex;
+	text-align: center;
+
+	.about-us {
+		margin: 2em;
+	}
+
+	h3 {
+		font-size: 2em;
+	}
+
+	.about-us p {
+		margin-top: 1em;
+		color: #444343;
+	}
+	}
+}
+
+ @media(min-width : 540px){
+	.meet-our-team {
+		background-color: #111212;
+		display: flex;
+		text-align: center;
+	
+		.about-us {
+			margin: 2em;
+		}
+	
+		h3 {
+			font-size: 2em;
+		}
+	
+		.about-us p {
+			margin-top: 1em;
+			color: #444343;
+		}
+	}
+} 
+
+@media (min-width: 728px){
+	.meet-our-team {
+		background-color: #111212;
+		display: flex;
+	
+		.about-us {
+			margin: 5em;
+			width: 30%;
+		}
+	
+		h3 {
+			font-size: 2em;
+			text-align: left;
+		}
+	
+		.about-us p {
+			text-align: left;
+			margin-top: 1em;
+			color: #444343;
+		}
+	}
+}
+
+@media (min-width: 1024px){
+	.meet-our-team {
+		background-color: #111212;
+		display: flex;
+	
+		.about-us {
+			margin: 5em;
+			width: 30%;
+		}
+	
+		h3 {
+			font-size: 2em;
+			text-align: left;
+		}
+	
+		.about-us p {
+			text-align: left;
+			margin-top: 1em;
+			color: #444343;
+		}
+	}
+	}
 .backdrop{
 	position: fixed;
 	inset: 0;
