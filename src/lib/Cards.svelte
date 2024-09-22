@@ -1,7 +1,7 @@
 <script>
 	import {Details, Carousel} from '$lib';
 
-	
+	let setValue;
 	export let person;
 	export let people;
 	export let showModal;

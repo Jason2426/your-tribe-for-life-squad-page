@@ -2,6 +2,7 @@
 	import {Cards} from '$lib';
 
     export let data;
+	let setValue;
 
     let showModal = true;
     const toggle = () =>{
