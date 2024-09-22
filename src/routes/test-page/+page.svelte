@@ -2,19 +2,19 @@
 	import {Cards} from '$lib';
 
     export let data;
-	export let people = data.people;
 
-	let id, squadId, bio
-
-	function changePersonData (event) {
-		id = event.target.bl
-		squadId = event.target.sq
-		bio = event.target.bio
-		showModal = true
+    let showModal = true;
+    const toggle = () =>{
+		showModal = !showModal;
 	}
-	export let showModal = false;
-    export const toggle = () =>{showModal = !showModal};
-	export let setValue 
+
+	console.log(data.people[0]);
+
+	let people = data.people;
+	const person_id = 72;
+	export let peep = person_id;
+	
+	
     // Check if the data has been received and is an array
     // console.log("Received data in +page.svelte:", data);
 </script>
