@@ -50,6 +50,7 @@
 .info ul li{
 	padding-inline: 15%;
 	padding-block: 5%;
+	font-size: clamp(1.5rem, 1.512vw + 0.388rem, 3rem);
 
 	&:nth-of-type(1){
 		padding-top: 10%;
@@ -69,6 +70,8 @@
 	overflow: hidden;
 
 	border-radius: var(--rad) var(--rad) var(--rad) 0 ;
+	outline: 1px solid white;
+
 }
 
 .profile div:has(img){
@@ -98,7 +101,14 @@
 	background-color: rgba(0, 0, 0, 0.418);
 	overflow: hidden;
 	border-radius: var(--rad) 0 var(--rad) var(--rad)  ;
+	border: .5px solid white;
 
+}
+
+.web-content:hover{
+	border: none;
+	border-top: 3px solid white;
+	border-right: 3px solid white;
 
 }
 .web-content iframe{
@@ -179,6 +189,12 @@
 .web-content .nWeb:has(img + p) img{
 	object-position: top;
 	filter: brightness(50%);
+	transition: 10s ease-in .5s;
+}
+
+.web-content:hover .nWeb:has(img + p) img{
+	object-position: center;
+	filter: brightness(80%);
 }
 
 .web-content .nWeb:has(img + p) p{
